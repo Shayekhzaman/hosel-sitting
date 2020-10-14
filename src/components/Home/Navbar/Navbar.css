@@ -1,0 +1,14 @@
+.logo{
+    width: 150px;
+    height: 47px;  
+    margin-left: 130px; 
+}
+.login-btn{
+    /* padding: 10px 20px; */
+    margin-right: 134px;
+    width: 134px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}

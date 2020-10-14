@@ -1,0 +1,31 @@
+.footer-bg{
+    background-color: #FBD062;
+}
+.footer-h2{
+    font-weight:600;
+    font-size:34px;
+    
+}
+.footer-input{
+    width:550px;
+    height: 50px;
+    text-align: center;
+}
+.footer-message{
+    width:550px;
+    height: 277px;
+    text-align: center;
+}
+.send-btn{
+    color: white;
+    background-color:black;
+    width:170px;
+    height: 45px;
+    border-radius: 5px;
+}
+.copyright-notice{
+    text-align: center;
+    color: grey;
+    margin-top:70px;
+    
+}

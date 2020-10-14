@@ -1,0 +1,11 @@
+.header-bg{
+    background-color:#FBD062;
+    width:1440px;
+}
+.triangle-bg{
+    width: 0;
+	height: 0;
+	border-top: 0px solid transparent;
+	border-left: 1440px solid #FBD062;
+	border-bottom: 80px solid transparent;
+}
