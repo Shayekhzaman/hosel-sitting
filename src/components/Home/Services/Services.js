@@ -8,17 +8,20 @@ const serviceData = [
     {
         name: 'Web & Mobile design',
         description: 'We craft stunning and amazing web Ul,using a well drafted ux to fit your product',
-        image: service1
+        image: service1,
+        img:'service1'
     },
     {
         name: 'Graphics design',
         description: 'Amazing flyers,social media post and brand representation that would make your brand stand out',
-        image: service2
+        image: service2,
+        img:'service2'
     },
     {
         name: 'Web development',
         description: 'With well written code.We build amazing apps for all platforms.Mobile and web apps in generates',
-        image: service3
+        image: service3,
+        img:'service3'
     },
 ]
 

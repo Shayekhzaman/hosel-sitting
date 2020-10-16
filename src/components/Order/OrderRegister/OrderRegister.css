@@ -1,0 +1,28 @@
+.userInput{
+    width:570px;
+    height: 60px;
+    margin-left: 100px;
+    text-align: center;
+}
+.sendBtn{
+    margin-left: 100px;
+    width: 160px;
+    height: 60px;
+    background-color:black;
+    border-radius: 5px;
+    color: white;
+}
+.submitBtn{
+    margin-left: 30px;
+    width: 170px;
+    height: 47px;
+    background-color:black;
+    border-radius: 5px;
+    color: white;
+}
+.userReview{
+    width:570px;
+    height: 60px;
+    margin-left: 30px;
+    text-align: center;
+}

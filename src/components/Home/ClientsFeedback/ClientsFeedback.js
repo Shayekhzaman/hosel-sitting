@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import customer1 from '../../../images/customer-1.png';
 import customer2 from '../../../images/customer-2.png';
 import customer3 from '../../../images/customer-3.png';
 import FeedbackDetails from '../FeedbackDetails/FeedbackDetails';
+import UserFeedback from '../Usereedback/UserFeedback';
 
 const clientFeedback=[
     {
@@ -25,14 +26,39 @@ const clientFeedback=[
     },
 ]
 const ClientsFeedback = () => {
+
+    const [review, setReview] =useState([]);
+    console.log(review);
+
+    useEffect(()=>{
+        fetch('http://localhost:5000/userReview')
+        .then(res => res.json())
+        .then(data => {
+            setReview(data)
+
+        })
+        
+    },[])
+    
+    console.log(review);
     return (
         <div className="text-center">
             <h1 style={{fontStyle:'poppins', textSize:'36px', lineHeight:'54px', marginBottom:'70px'}}>Client <span style={{ color: 'green' }}>Feedback</span></h1>
             <div className="row w-75 " >
                 {
-                    clientFeedback.map(feedback =><FeedbackDetails feedback={feedback}></FeedbackDetails>)
+                    clientFeedback.map(feedback =><FeedbackDetails 
+                        feedback={feedback}                   
+                        ></FeedbackDetails>)
                 }
             </div>
+            <div className="row w-75">
+                {
+                    review.map(feedback => <UserFeedback 
+                        feedback={feedback}
+                        ></UserFeedback>)
+                }
+            </div>
+
         </div>
     );
 };

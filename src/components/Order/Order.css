@@ -1,0 +1,9 @@
+.main-area{
+    /* border: 1px solid red; */
+    background-color: #E5E5E5;
+    height: 700px;
+}
+.link{
+    color: lightgreen;
+    /* text-decoration: none; */
+}

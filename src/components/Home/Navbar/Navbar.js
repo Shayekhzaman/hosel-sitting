@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import { UserContext } from '../../../App';
 import logo from '../../../images/logos/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
+  const history= useHistory();
+  const [loggedInUser, setLoggedInUser]= useContext(UserContext);
+
+  const handleLogin = () =>{
+    history.push('/orderRegister');
+  }
+
     return (
         <nav class="navbar navbar-expand-lg navbar-light ">
   <img class="img-fluid logo" src={logo} alt="logo"/>
@@ -15,16 +24,16 @@ const Navbar = () => {
         <a class="nav-link mr-4" href="/home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mr-4" href="#">Our Portfolio</a>
+        <a class="nav-link mr-4" href="/home">Our Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mr-4" href="#">Out Team</a>
+        <a class="nav-link mr-4" href="/home">Out Team</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mr-4" href="#">Contact Us</a>
+        <a class="nav-link mr-4" href="/home">Contact Us</a>
       </li>
       <li class="nav-item ">
-       <button class="login-btn">Login</button>
+       <button onClick={handleLogin} class="login-btn">Login</button>
       </li>
       
     </ul>
