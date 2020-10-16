@@ -7,9 +7,9 @@ import './Navbar.css';
 const Navbar = () => {
   const history= useHistory();
   const [loggedInUser, setLoggedInUser]= useContext(UserContext);
-
+console.log(loggedInUser);
   const handleLogin = () =>{
-    history.push('/orderRegister');
+    history.push('/dashboard');
   }
 
     return (

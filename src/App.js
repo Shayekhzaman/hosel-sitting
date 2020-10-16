@@ -16,6 +16,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import ServiceList from './components/Admin/ServiceList/ServiceList';
 import AddService from './components/Admin/AddService/AddService';
 import MakeAdmin from './components/Admin/MakeAdmin/MakeAdmin';
+import DashBoard from './components/DashBoard/DashBoard';
 
 export const UserContext = createContext();
 
@@ -67,20 +68,22 @@ function App() {
             <OrderReview></OrderReview>
           </PrivateRoute>
 
-          
+          <PrivateRoute path="/dashboard">
+            <DashBoard></DashBoard>
+          </PrivateRoute>
           
           {/* admin */}
-          {/* <Route path="/serviceList">
+          <PrivateRoute path="/serviceList">
             <ServiceList></ServiceList>
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/addService">
+          <PrivateRoute path="/addService">
             <AddService></AddService>
-          </Route>
+          </PrivateRoute>
 
-          <Router path="/makeAdmin">
+          <PrivateRoute path="/makeAdmin">
               <MakeAdmin></MakeAdmin>
-          </Router> */}
+          </PrivateRoute>
 
 
           <Route path="*">

@@ -1,10 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import '../Order.css';
 import logo from '../../../images/logos/logo.png';
 import { Link, useHistory, useParams } from 'react-router-dom';
 import { UserContext } from '../../../App';
 import { useForm } from 'react-hook-form';
 import './OrderRegister.css';
+import ServiceList from '../../Admin/ServiceList/ServiceList';
 
 const OrderRegister = () => {
     const { service, img, description } = useParams();
@@ -14,6 +15,8 @@ const OrderRegister = () => {
     const { register, handleSubmit, errors } = useForm();
 
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    
+
     const { displayName, email } = loggedInUser;
 
     const onSubmit = (data) => {
@@ -103,6 +106,7 @@ const OrderRegister = () => {
                     </form>
                 </main>
             </div>
+           
         </div>
     );
 };

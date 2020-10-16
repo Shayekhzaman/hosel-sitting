@@ -1,0 +1,18 @@
+.mailCard{
+    width:700px;
+    height: 350px;
+   border-radius:5px;
+    margin-top: 50px;
+    margin-left:30px;
+    background-color:white;
+}
+.mailInput{
+    width:450px;
+    height: 40px;
+}
+.mailBtn{
+    width:108px;
+    height: 40px;
+    border-radius:5px;
+    background-color:green;
+}

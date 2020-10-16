@@ -16,18 +16,14 @@ const Login = () => {
     const history = useHistory();
     const location = useLocation();
 
-    // let { from } = location.state || { from: { pathname: '/' } };
     let { from } = location.state || { from: { pathname: "/" } };
 
     const provider = new firebase.auth.GoogleAuthProvider();
 
     const handleSignIn = () => {
-        // console.log("sign in click");
         firebase.auth().signInWithPopup(provider)
             .then(res => {
-                // const { displayName, email } = res.user;
                 const user = res.user;
-                // console.log(user);
                 setLoggedInUser(user);
                 history.replace(from);
                    
