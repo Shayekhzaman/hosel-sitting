@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
-import { UserContext } from '../../../App';
+// import { UserContext } from '../../../App';
 import logo from '../../../images/logos/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
   const history= useHistory();
-  const [loggedInUser, setLoggedInUser]= useContext(UserContext);
-console.log(loggedInUser);
+  // const [loggedInUser, setLoggedInUser]= useContext(UserContext);
+
   const handleLogin = () =>{
     history.push('/dashboard');
   }

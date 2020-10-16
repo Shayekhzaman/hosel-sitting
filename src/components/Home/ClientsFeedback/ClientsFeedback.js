@@ -28,7 +28,7 @@ const clientFeedback=[
 const ClientsFeedback = () => {
 
     const [review, setReview] =useState([]);
-    console.log(review);
+    
 
     useEffect(()=>{
         fetch('http://localhost:5000/userReview')
@@ -40,7 +40,6 @@ const ClientsFeedback = () => {
         
     },[])
     
-    console.log(review);
     return (
         <div className="text-center">
             <h1 style={{fontStyle:'poppins', textSize:'36px', lineHeight:'54px', marginBottom:'70px'}}>Client <span style={{ color: 'green' }}>Feedback</span></h1>

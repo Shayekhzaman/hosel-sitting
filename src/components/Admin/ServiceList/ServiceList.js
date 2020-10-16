@@ -1,13 +1,28 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../App';
 import '../Admin.css';
 import logo from '../../../images/logos/logo.png';
+import AllServiceList from '../AllServiceList/AllServiceList';
 
 const ServiceList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
+    const [allServiceList, setAllServiceList] = useState([]);
+
     const { displayName } = loggedInUser;
+    useEffect(() => {
+        fetch('http://localhost:5000/allList')
+            .then(res => res.json())
+            .then(data => {
+                // console.log(data);
+                setAllServiceList(data)
+            })
+    }, [])
+
+
+
+
     return (
         <div>
             <div style={{ paddingTop: '40px', display: 'flex' }} className="container">
@@ -37,8 +52,26 @@ const ServiceList = () => {
 
                 </aside>
                 <main className="col-md-10 main-area">
-                    service list
-               </main>
+
+                    <div style={{ backgroundColor: 'white' }}>
+                        <div style={{ width: '100%', marginTop: '50px', backgroundColor: '#F5F6FA', marginBottom:'20px', display: 'flex' }}>
+                            
+                            <h5>Name</h5>
+                            <h5 style={{marginLeft:'120px', marginRight:'140px'}}>Email Id</h5>
+                            <h5>Service</h5>
+                            <h5 style={{marginLeft:'90px',marginRight:'150px'}}>Project details</h5>
+                            <h5>Status</h5>
+
+                        </div>
+
+
+                        <div >
+                            {
+                                allServiceList.map(allList => <AllServiceList allList={allList}></AllServiceList>)
+                            }
+                        </div>
+                    </div>
+                </main>
             </div>
         </div>
     );

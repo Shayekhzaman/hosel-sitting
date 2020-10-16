@@ -2,7 +2,7 @@ import React from 'react';
 import unknownUser from '../../../images/unknownUser.png';
 
 const UserFeedback = ({feedback}) => {
-    console.log(feedback);
+    
     const {userName, companyName, description} = feedback
     return (
         
