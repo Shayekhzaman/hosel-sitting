@@ -40,18 +40,6 @@ function App() {
             <Login></Login>
           </Route>
 
-          {/* start */}
-          {/* <Route path="/orderReview">
-            <OrderReview></OrderReview>
-          </Route>
-          <Route path="/orderList">
-          <OrderList></OrderList>
-          </Route>
-          <Route path="/orderRegister">
-            <OrderRegister></OrderRegister>
-          </Route> */}
-          {/* end */}
-
           <PrivateRoute path="/orderRegister/:service/:img/:description">
             <OrderRegister></OrderRegister>
           </PrivateRoute>
@@ -71,7 +59,7 @@ function App() {
           <PrivateRoute path="/dashboard">
             <DashBoard></DashBoard>
           </PrivateRoute>
-          
+
           {/* admin */}
           <PrivateRoute path="/serviceList">
             <ServiceList></ServiceList>
@@ -82,7 +70,7 @@ function App() {
           </PrivateRoute>
 
           <PrivateRoute path="/makeAdmin">
-              <MakeAdmin></MakeAdmin>
+            <MakeAdmin></MakeAdmin>
           </PrivateRoute>
 
 

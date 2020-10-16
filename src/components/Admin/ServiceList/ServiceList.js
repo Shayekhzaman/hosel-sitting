@@ -12,7 +12,7 @@ const ServiceList = () => {
 
     const { displayName } = loggedInUser;
     useEffect(() => {
-        fetch('http://localhost:5000/allList')
+        fetch('https://ancient-plateau-30299.herokuapp.com/allList')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);

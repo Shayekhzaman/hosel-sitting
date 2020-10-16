@@ -11,7 +11,7 @@ const OrderList = () => {
     const [service, setService] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/myService?email='+email)
+        fetch('https://ancient-plateau-30299.herokuapp.com/myService?email='+email)
             .then(res => res.json())
             .then(data => setService(data))
     }, [])
