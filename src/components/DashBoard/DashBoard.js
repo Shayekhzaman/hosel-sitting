@@ -21,7 +21,7 @@ const DashBoard = () => {
 
 
     useEffect(() => {
-        fetch('https://ancient-plateau-30299.herokuapp.com/admin')
+        fetch('http://localhost:5000/admin')
         .then(res => res.json())
         .then(data=>{
             setIsAdmin(data);

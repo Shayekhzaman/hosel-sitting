@@ -31,7 +31,7 @@ const ClientsFeedback = () => {
     
 
     useEffect(()=>{
-        fetch('https://ancient-plateau-30299.herokuapp.com/userReview')
+        fetch('http://localhost:5000/userReview')
         .then(res => res.json())
         .then(data => {
             setReview(data)

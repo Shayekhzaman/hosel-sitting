@@ -24,7 +24,7 @@ const OrderRegister = () => {
             const serviceData={...data}
             console.log(serviceData);
 
-            fetch('https://ancient-plateau-30299.herokuapp.com/addService', {
+            fetch('http://localhost:5000/addService', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
                 body: JSON.stringify(serviceData)
@@ -37,7 +37,7 @@ const OrderRegister = () => {
         else{
             const serviceData={...data, img, description}
             console.log(serviceData);
-            fetch('https://ancient-plateau-30299.herokuapp.com/addService', {
+            fetch('http://localhost:5000/addService', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
                 body: JSON.stringify(serviceData)
