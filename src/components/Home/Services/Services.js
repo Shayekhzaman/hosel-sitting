@@ -6,20 +6,20 @@ import ServiceDetail from '../ServiceDetail/ServiceDetail';
 
 const serviceData = [
     {
-        name: 'Web & Mobile design',
-        description: 'We craft stunning and amazing web Ul,using a well drafted ux to fit your product',
+        name: '5 Star',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, earum.' ,
         image: service1,
         img:'service1'
     },
     {
-        name: 'Graphics design',
-        description: 'Amazing flyers,social media post and brand representation that would make your brand stand out',
+        name: 'Economy Class',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, earum.',
         image: service2,
         img:'service2'
     },
     {
-        name: 'Web development',
-        description: 'With well written code.We build amazing apps for all platforms.Mobile and web apps in generates',
+        name: 'Business Class',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, earum.',
         image: service3,
         img:'service3'
     },

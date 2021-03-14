@@ -7,7 +7,7 @@ const Footer = () => {
             <div style={{ height: '50px' }}></div>
             <div className="row">
                 <div className="col-md-5 offset-md-1">
-                    <h2 className="footer-h2 mb-4">Let's us handle your <br />project, professionally. </h2>
+                    <h2 className="footer-h2 mb-4">Let's us handle your <br />problem and Report. </h2>
                     <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a <br /> pariatur officia id fuga reiciendis illum necessitatibus.</p>
                 </div>
                 <div className="col-md-6">
@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
             </div>
             <footer>
-                <p className="copyright-notice"><small>copyright Orange labs {new Date().getFullYear()}</small></p>
+                <p className="copyright-notice"><small>© Ashik Zaman All Rights Reserved {new Date().getFullYear()}</small></p>
                 <div style={{height:'30px'}}></div>
             </footer>
         </div>

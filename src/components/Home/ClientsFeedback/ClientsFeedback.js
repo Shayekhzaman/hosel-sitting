@@ -7,7 +7,7 @@ import UserFeedback from '../Usereedback/UserFeedback';
 
 const clientFeedback=[
     {
-        name:'Kate winslet',
+        name:'Nusrat Mifta',
         companyName:'uap',
         description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. At labore blanditiis modi accusamus sed possimus esse explicabo odio, iusto adipisci.',
         image:customer1

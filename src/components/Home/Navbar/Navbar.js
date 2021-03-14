@@ -24,7 +24,7 @@ const Navbar = () => {
         <a class="nav-link mr-4" href="/home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mr-4" href="/home">Our Portfolio</a>
+        <a class="nav-link mr-4" href="/home">Our Service</a>
       </li>
       <li class="nav-item">
         <a class="nav-link mr-4" href="/home">Out Team</a>

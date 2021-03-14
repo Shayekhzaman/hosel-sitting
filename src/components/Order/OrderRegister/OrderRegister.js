@@ -58,8 +58,8 @@ const OrderRegister = () => {
     return (
         <div>
             <div style={{ paddingTop: '40px', display: 'flex' }} className="container">
-                <img className="img-fluid mr-5" style={{ width: '150px', height: '47px' }} src={logo} alt="" />
-                <h5 className="ml-5 mr-auto" style={{ fontWeight: 500, fontSize: '22px', fontStyle: 'poppins' }}>Order Registration</h5>
+                <img className="img-fluid mr-5" style={{ width: '150px', height: '77px' }} src={logo} alt="" />
+                <h5 className="ml-5 mr-auto" style={{ fontWeight: 500, fontSize: '22px', fontStyle: 'poppins' }}> Registration Sitting</h5>
                 <h4>{displayName}</h4>
             </div>
             <div className="container row offset-md-1">
@@ -102,8 +102,10 @@ const OrderRegister = () => {
                         <input className="userInput" type="text" name="description" id="" placeholder="Description" />
                         <br /> <br />
 
-                        <input className="sendBtn" type="submit" value="Send" />
+                        {/* <input className="sendBtn" type="submit" value="Send" /> */}
                     </form>
+                    <input className="sendBtn" type="submit" value="Send" />
+
                 </main>
             </div>
            
